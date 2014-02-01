@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!-- saved from url=(0104)index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Diamond Hair Salon - Where Hair Comes To Life</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diamond where hair comes to life.">
+    <meta name="author" content="Frog4U &amp; NG Development">
+
+
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .brand { margin-left: auto !important; margin-right: auto !important; }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!-- Commented out - update these with your own files -->
+    <!-- 
+      <link rel="shortcut icon" href="ico/favicon.ico">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png"> 
+    -->
+  <style type="text/css"></style>
+
+
+
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+<style>
+      html, body, #map-canvasLDN {
+        margin: 0;
+        padding: 0;
+      height:100%;
+      }
+      .featurette-divider {
+        margin: 40px 0 !important;
+      }
+
+      .featurette-heading{
+        margin-top: 20px !important;
+      }
+
+      /* import ttf fonts */
+      @font-face
+      {
+      font-family: Marydale;
+      src: url(fonts/Marydale.ttf);
+      }
+
+      .table-heading{
+        font-family:Marydale;
+        font-size:30px;
+      }
+
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var mapLDN;
+
+function initialize() {
+  var mapOptionsLDN = {
+    zoom: 16,
+    center: new google.maps.LatLng(51.86118, -2.2376657),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+  mapLDN = new google.maps.Map(document.getElementById('map-canvasLDN'),
+      mapOptionsLDN);
+
+
+    var OfficeLDN = new google.maps.Marker(
+    {
+        position: new google.maps.LatLng(51.86118, -2.2376657),
+        map: mapLDN,
+        title:"Here we are!"
+   });
+
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+
+</script>
+<!-- end map api-->
+
+
+
+</head>
+
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+         <img class="brand" style="float:center !important; max-height:300px;" src="img/DiamondLogo.png" />
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li class="active"><a href="index.html#">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+              <li class="dropdown ">
+                <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">
+                      Dropdown
+                      <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html#">Item 1</a></li>
+                  <li><a href="index.html#">Item 2</a></li>
+                </ul>
+              </li><!-- dropdown -->
+
+            </ul><!-- /.nav -->
+          </div><!--/.nav-collapse -->
+ 
+        </div><!-- /.container -->
+      </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->
+
+    <div class="container">
+
+      <!--  Carousel -->
+      <!--  consult Bootstrap docs at 
+            http://twitter.github.com/bootstrap/javascript.html#carousel -->
+      <div id="this-carousel-id" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="item">
+            <a href="http://hubblesite.org/gallery/album/entire/pr2006046a/xlarge_web/npp/128/">  <img src="./Carousel   Twitter Bootstrap 2.0.4_files/antennae.jpg" alt="Antennae Galaxies">
+            </a>
+            <div class="carousel-caption">
+              <p>The Antennae Galaxies</p>
+              <p><a href="http://hubblesite.org/gallery/album/entire/pr2006046a/xlarge_web/npp/128/">Hubblesite.org »</a></p>
+            </div>
+          </div>
+          <div class="item active">
+            <a href="http://hubblesite.org/gallery/album/entire/pr2007016e/xlarge_web/npp/128/">
+              <img src="./Carousel   Twitter Bootstrap 2.0.4_files/carina.jpg" alt="Carina Caterpillar">
+            </a>
+            <div class="carousel-caption">
+              <p>Carina Nebula: The Caterpillar</p>
+              <p><a href="http://hubblesite.org/gallery/album/entire/pr2007016e/xlarge_web/npp/128/">Hubblesite.org »</a></p>
+            </div>
+          </div>
+          <div class="item">
+            <a href="http://hubblesite.org/gallery/album/entire/pr2003010i/npp/128/">
+              <img src="./Carousel   Twitter Bootstrap 2.0.4_files/echo.jpg" alt="Light Echo">
+            </a>
+            <div class="carousel-caption">
+              <p>Light Echo From Star V838 Monocerotis</p>
+              <p><a href="http://hubblesite.org/gallery/album/entire/pr2003010i/npp/128/">Hubblesite.org »</a></p>
+            </div>
+          </div>
+          <div class="item">
+            <a href="http://hubblesite.org/gallery/album/entire/pr2006024a/xlarge_web/npp/128/">
+              <img src="./Carousel   Twitter Bootstrap 2.0.4_files/ngc5866.jpg" alt="Galaxy NGC5866">
+            </a>
+            <div class="carousel-caption">
+              <p>Galaxy NGC 5866</p>
+              <p><a href="http://hubblesite.org/gallery/album/entire/pr2006024a/xlarge_web/npp/128/">Hubblesite.org »</a></p>
+            </div>
+          </div>
+        </div><!-- .carousel-inner -->
+        <!--  next and previous controls here
+              href values must reference the id for this carousel -->
+          <a class="carousel-control left" href="index.html#this-carousel-id" data-slide="prev">‹</a>
+          <a class="carousel-control right" href="index.html#this-carousel-id" data-slide="next">›</a>
+      </div><!-- .carousel -->
+      <!-- end carousel -->
+
+      <!-- Example row of columns -->
+
+
+      <div class="row">
+        <div class="span12">
+          <h2 class="featurette-heading">Welcome to Diamond Hair Salon</h2>
+          <p class="lead">Here at diamond we are passionate about hair. We cater for all the family with a 15% discount for children and O.A.P. We are a family run business that specialize in European, African, Asian, Caribbean and Caucasian hair. Our friendly team will make you leave shining like a diamond.</p>
+      </div><!-- /.row -->
+      </div>
+      <hr class="featurette-divider">
+      <div class="col-md-12">
+          <h2 class="featurette-heading">Our Prices. <span class="text-muted">They'll blow your mind.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor 
+fringilla. Vestibulum id ligula porta felis euismod semper. Praesent 
+commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, 
+tellus ac cursus commodo.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span4"></div>
+        <div class="span8">
+        <table class="table table-hover">
+
+                        <thead>
+                            <tr>
+                                <th class="table-heading" width="60%">Women</th>
+                                <th width="20%">Senior Stylist</th>
+                                <th width="20%">Creative Director</th>
+                            </tr>
+                        </thead>
+                                                <tbody>
+                            <tr>
+                                <th>Dry cut (short hair)</th>
+                                <td>£56</td>
+                                <td>£61</td>
+                            </tr>
+                            <tr>
+                                <th>Dry cut (Long hair)</th>
+                                <td>£47</td>
+                                <td>£52</td>
+                            </tr>
+                            <tr>
+                                <th>Wash &amp; cut (scalp massage)</th>
+                                <td>£39</td>
+                                <td>£43</td>
+                            </tr>
+                            <tr>
+                                <th>Cut, wash and blow-dry</th>
+                                <td>£28</td>
+                                <td>£31</td>
+                            </tr>
+                            <tr>
+                                <th>Restyle cut/blow-dry</th>
+                                <td>£30</td>
+                                <td>£33</td>
+                            </tr>
+                            <tr>
+                                <th>Blow-dry &amp; wash</th>
+                                <td>£30</td>
+                                <td>£33</td>
+                            </tr>
+                            <tr>
+                                <th>Straightening</th>
+                                <td>£30</td>
+                                <td>£33</td>
+                            </tr>
+                            <tr>
+                                <th>Shampoo &amp; Set</th>
+                                <td>£30</td>
+                                <td>£33</td>
+                            </tr>
+                            <tr>
+                                <th>Wash &amp; Condition</th>
+                                <td>£30</td>
+                                <td>£33</td>
+                            </tr>
+                            <tr>
+                                <th>Fringe trim</th>
+                                <td>£30</td>
+                                <td>£33</td>
+                            </tr>
+                        </tbody>
+                        
+                    
+        </table>
+
+<table class="table table-hover">
+
+                        <thead>
+                            <tr>
+                                <th class="table-heading" width="60%">Men</th>
+                                <th width="20%">Senior Stylist</th>
+                                <th width="20%">Creative Director</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Gents cut</th>
+                                <td>£38</td>
+                                <td>£43</td>
+                            </tr>
+                            <tr>
+                                <th>Gents wash and cut</th>
+                                <td>£28</td>
+                                <td>£31</td>
+                            </tr>
+                            <tr>
+                                <th>Gents highlights</th>
+                                <td>£23</td>
+                                <td>£23</td>
+                            </tr>
+                            <tr>
+                                <th>Childs hair cut</th>
+                                <td>£27</td>
+                                <td>£27</td>
+                            </tr>
+                        </tbody>
+                    
+        </table>
+
+        <table class="table table-hover">
+
+                        <thead>
+                            <tr>
+                                <th class="table-heading" width="60%">Colouring</th>
+                                <th width="20%">Senior Stylist</th>
+                                <th width="20%">Creative Director</th>
+                            </tr>
+                        </thead>
+<tbody>
+
+                            <tr>
+                                <th>T-section (2 or more colours in foils)</th>
+                                <td>£38</td>
+                                <td>£43</td>
+                            </tr>
+                            <tr>
+                                <th>Full head high/ Low light</th>
+                                <td>£28</td>
+                                <td>£31</td>
+                            </tr>
+                            <tr>
+                                <th>Foils and colour in-between</th>
+                                <td>£23</td>
+                                <td>£23</td>
+                            </tr>
+                            <tr>
+                                <th>Full head colour</th>
+                                <td>£27</td>
+                                <td>£27</td>
+                            </tr>
+                            <tr>
+                                <th>Creative colour</th>
+                                <td>£22</td>
+                                <td>£22</td>
+                            </tr>
+                            <tr>
+                                <th>Full head of colour application</th>
+                                <td>£25</td>
+                                <td>£28</td>
+                            </tr>
+                            <tr>
+                                <th>Re-growth</th>
+                                <td>£35</td>
+                                <td>£38</td>
+                            </tr>
+                        </tbody>
+                    
+        </table>
+        * All our colorings include a complimentary style. (Cut not including)
+      </div>
+      
+
+
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="span7">
+          <h2 class="featurette-heading">Here we are. <span class="text-muted">Contact details below.</span></h2>
+        <address class="lead">
+          <span class="street-address"><i class="fa fa-home fa-fw"></i>&nbsp;93A Barton Street,</span><br>
+          <span class="region">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gloucester</span><br>
+          <span class="postal-code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GL1 4HR</span><br>
+          <span class="country-name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Great Britain</span><br>
+          <span class="tel"><i class="fa fa-phone fa-fw"></i> 01452 301 172</span><br>
+          <span class="mob"><i class="fa fa-mobile fa-fw"></i> 07960 453 385</span><br>
+          <span class="email"><i class="fa fa-envelope fa-fw"></i>&nbsp;<a href="mailto:info@diamondhairsallon.co.uk?Subject=Hair%20Enquiry" target="_top">info@diamondhairsallon.co.uk</a></span>
+        </address>
+        </div>
+        <div class="span5" style="height: 350px; ">
+          <div id="map-canvasLDN"></div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row">
+        <div class="span4">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="index.html#">View details »</a></p>
+        </div>
+        <div class="span4">
+          <h2>Heading</h2>
+           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn" href="index.html#">View details »</a></p>
+       </div>
+        <div class="span4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn" href="index.html#">View details »</a></p>
+        </div>
+      </div>
+
+
+
+      <hr>
+
+      <footer>
+      
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.carousel').carousel({
+          interval: 4000
+        });
+      });
+    </script>
+
+  
+
+</body></html>
