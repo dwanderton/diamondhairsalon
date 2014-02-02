@@ -1,478 +1,233 @@
+
+
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1" />
-
-    <meta name="HandheldFriendly" content="true" />
-    <meta name="description" content="Hair comes to life at Diamond - Come in and see for yourself. We are a family run business that specialize in European, African, Asian, Caribbean and Caucasian hair. Our friendly team will make you leave shining like a diamond.">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="img/favicon.png">
-
-    <title>Diamond Hair Salon - Where Hair Comes To Life</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+<html lang=en><head>
+<meta http-equiv=content-type content="text/html; charset=UTF-8">
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1"/>
+<meta name=HandheldFriendly content=true />
+<meta name=description content="Hair comes to life at Diamond - Come in and see for yourself. We are a family run business that specialize in European, African, Asian, Caribbean and Caucasian hair. Our friendly team will make you leave shining like a diamond.">
+<meta name=author content="">
+<link rel="shortcut icon" href="img/favicon.png">
+<title>Diamond Hair Salon - Where Hair Comes To Life</title>
+<link href="css/bootstrap.css" rel=stylesheet>
+<!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-  <style type="text/css" id="holderjs-style"></style>
-
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-<style>
-
-      html, body, #map-canvasLDN {
-        margin: 0;
-        padding: 0;
-        height:100%;
-        background-color:#222222;
-        width: auto !important;
-        overflow-x: hidden !important;
-        -webkit-overflow-scrolling: touch;
-      }
-
-      .navbar{ background-color:#000000;}
-
-      .featurette-divider {
-        margin: 40px 0 !important;
-      }
-
-      .featurette-heading{
-        margin-top: 20px !important;
-      }
-
-      /* import ttf fonts */
-      @font-face
-      {
-      font-family: DINbekBlack;
-      src: url(fonts/DINbekBlack.ttf);
-      }
-
-      @font-face
-      {
-      font-family: Marydale;
-      src: url(fonts/Marydale.ttf);
-      }
-
-      .table-heading{
-        font-family:Marydale;
-        font-size:40px;
-        color: #F8571C;
-      }
-    
-
-      /* add in lines behind headers*/
-
-
-        
-        .fancy {
-          line-height: 0;
-          text-align: center;
-        }
-        .fancy span {
-          display: inline-block;
-          position: relative;
-          text-transform:uppercase;
-          color: #F8571C;
-          padding-bottom: 40px;
-          font-weight:bold;
-          font-family: DINbekBlack;
-        }
-        .fancy span:before,
-        .fancy span:after {
-          content: "";
-          position: absolute;
-          height: 5px;
-          border-bottom: 1px solid #F8571C;
-          border-top: 1px solid #F8571C;
-          top: 0;
-          width: 600px;
-        }
-        .fancy span:before {
-          right: 100%;
-          margin-right: 15px;
-        }
-        .fancy span:after {
-          left: 100%;
-          margin-left: 15px;
-        }
-        .amp {
-          margin: 0 0 0.25em 0;
-        }
-        .amp span {
-          font-size: 0.7em;
-        }
-        
-        .copy {
-          font: 1em Georgia, Serif;
-          text-align: justify;
-          -moz-column-count: 2;
-          -moz-column-gap: 20px;
-          -webkit-column-count: 2;
-          -webkit-column-gap: 20px;
-        }
-        .copy p {
-          margin: 0 0 1em 0;
-        }
-        
-            
-        img.inside-image {
-        position:fixed;
-        right:10px;
-        top:0px;
-        height:75px;
-        
-        }
-        
-        .address { 
-            line-height:3 !important;
-        }
-
-
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script>
-var mapLDN;
-
-function initialize() {
-  var mapOptionsLDN = {
-    zoom: 16,
-    center: new google.maps.LatLng(51.861239,-2.238065),
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-
-  mapLDN = new google.maps.Map(document.getElementById('map-canvasLDN'),
-      mapOptionsLDN);
-
-
-    var OfficeLDN = new google.maps.Marker(
-    {
-        position: new google.maps.LatLng(51.861239,-2.238065),
-        map: mapLDN,
-        title:"Here we are!"
-   });
-
-
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-
-    </script>
-<!-- end map api-->
-
-
-
+<link href="css/carousel.css" rel=stylesheet>
+<style id=holderjs-style></style>
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel=stylesheet>
+<style>html, body, #map-canvasLDN{margin:0;padding:0;height:100%;background-color:#222222;width:auto !important;overflow-x:hidden !important;overflow:scroll;-webkit-overflow-scrolling:touch;}
+.navbar{background-color:#000000;}
+.featurette-divider{margin:40px 0 !important;}
+.featurette-heading{margin-top:20px !important;}
+@font-face{font-family:DINbekBlack;src:url(fonts/DINbekBlack.ttf);}
+@font-face{font-family:Marydale;src:url(fonts/Marydale.ttf);}
+.table-heading{font-family:Marydale;font-size:40px;color:#F8571C;}
+.fancy{line-height:0;text-align:center;}
+.fancy span{display:inline-block;position:relative;text-transform:uppercase;color:#F8571C;padding-bottom:40px;font-weight:bold;font-family:DINbekBlack;}
+.fancy span:before,
+.fancy span:after{content:"";position:absolute;height:5px;border-bottom:1px solid #F8571C;border-top:1px solid #F8571C;top:0;width:600px;}
+.fancy span:before{right:100%;margin-right:15px;}
+.fancy span:after{left:100%;margin-left:15px;}
+.amp{margin:0 0 0.25em 0;}
+.amp span{font-size:0.7em;}
+.copy{font:1em Georgia, Serif;text-align:justify;-moz-column-count:2;-moz-column-gap:20px;-webkit-column-count:2;-webkit-column-gap:20px;}
+.copy p{margin:0 0 1em 0;}
+img.inside-image{position:fixed;right:10px;top:0px;height:75px;}
+.address{line-height:3 !important;}</style>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>var mapLDN;function initialize(){var mapOptionsLDN={zoom:16,center:new google.maps.LatLng(51.861239,-2.238065),mapTypeId:google.maps.MapTypeId.ROADMAP};mapLDN=new google.maps.Map(document.getElementById('map-canvasLDN'),mapOptionsLDN);var OfficeLDN=new google.maps.Marker({position:new google.maps.LatLng(51.861239,-2.238065),map:mapLDN,title:"Here we are!"});}
+google.maps.event.addDomListener(window,'load',initialize);</script>
 </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-<a name="top"></a>
-        <div class="navbar navbar-default navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <!-- not needed any more:
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              -->
-            </div>
-             <img class="brand" style="max-height:300px; max-width:100%;margin: 0 auto; display:block;" src="img/DiamondLogo.png" />
-            <a href="#"><img class="inside-image shop-link" src="img/shop.png"/></a>
-            
-            <div class="navbar-collapse collapse pull-right">
-              <ul class="nav navbar-nav">
-                <!-- <li><a href="#" data-toggle="popover" title="Shop" data-content="Check back soon!">
-                   Visit our Shop
-                  </a></li>
-                <li><a href="#">Call us on: 01452 301 172 / 07960 453 385</a></li> -->
-               <!-- <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              -->
-              </ul>
-            </div>
-          
-          </div>
-        </div>
-
-    <div id="mainCarousel" class="carousel slide">
-      <ol class="carousel-indicators">
-          <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#mainCarousel" data-slide-to="1"></li>
-          <li data-target="#mainCarousel" data-slide-to="2"></li>
-          <li data-target="#mainCarousel" data-slide-to="3"></li>
-          <li data-target="#mainCarousel" data-slide-to="4"></li>
-          <li data-target="#mainCarousel" data-slide-to="5"></li>
-          <li data-target="#mainCarousel" data-slide-to="6"></li>
-      </ol>
-        
-        <div class="carousel-inner">
-        
-            <div class="item active">
-                <img src="img/slide7.jpg" alt="Hairdressing" >
-            </div>
-            <div class="item">
-                <img src="img/slide2.jpg" alt="Styling Cut and Blow Dry" >
-            </div>
-            <div class="item">
-                <img src="img/slide3.jpg" alt="Located in Gloucester" >
-            </div>
-            <div class="item">
-                <img src="img/slide4.jpg" alt="Lots of products in our Hair Care range" >
-            </div>
-            <div class="item">
-                <img src="img/slide5.jpg" alt="Womens Styling" >
-            </div>
-            <div class="item">
-                <img src="img/slide6.jpg" alt="Luxury Care" >
-            </div>
-            <div class="item">
-                <img src="img/slide1.jpg" alt="Men's Cut" >
-            </div>
-        </div>
-        <a class="carousel-control left" href="#mainCarousel" data-slide="prev"><span class="icon-prev"></span></a>
-        <a class="carousel-control right" href="#mainCarousel" data-slide="next"><span class="icon-next"></span></a>
-    </div>
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h2 class="featurette-heading fancy"><span>Diamond Hair</span></h2>
-          <p class="lead">Here at diamond we are passionate about hair. We cater for all the family with a 15% discount for children and O.A.P. We are a family run business that specialize in European, African, Asian, Caribbean and Caucasian hair. Our friendly team will make you leave shining like a diamond.</p>
-        </div>
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <!-- <hr class="featurette-divider"> -->
-
-
-      <div class="row featurette">
-        <div class="col-md-12">
-
-          <h2 class="featurette-heading fancy"><span>Our Service</span></h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-        <table class="table">
-
-                        <thead>
-                            <tr>
-                                <th class="table-heading" width="60%">Women</th>
-                            </tr>
-                        </thead>
-                                                <tbody>
-                            <tr>
-                                <th>Dry cut (short hair)</th>
-                               
-                            </tr>
-                            <tr>
-                                <th>Dry cut (Long hair)</th>
-                                
-                            </tr>
-                            <tr>
-                                <th>Wash &amp; cut (scalp massage)</th>
-                               
-                            </tr>
-                            <tr>
-                                <th>Cut, wash and blow-dry</th>
-                                
-                            </tr>
-                            <tr>
-                                <th>Restyle cut/blow-dry</th>
-                             
-                            </tr>
-                            <tr>
-                                <th>Blow-dry &amp; wash</th>
-                              
-                            </tr>
-                            <tr>
-                                <th>Straightening</th>
-                             
-                            </tr>
-                            <tr>
-                                <th>Shampoo &amp; Set</th>
-                               
-                            </tr>
-                            <tr>
-                                <th>Wash &amp; Condition</th>
-                               
-                            </tr>
-                            <tr>
-                                <th>Fringe trim</th>
-                             
-                            </tr>
-                        </tbody>
-                        
-                    
-        </table>
-
-<table class="table">
-
-                        <thead>
-                            <tr>
-                                <th class="table-heading" width="60%">Men</th>
-                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Gents cut</th>
-                                
-                            </tr>
-                            <tr>
-                                <th>Gents wash and cut</th>
-                               
-                            </tr>
-                            <tr>
-                                <th>Gents highlights</th>
-                              
-                            </tr>
-                            <tr>
-                                <th>Childs hair cut</th>
-                                
-                            </tr>
-                        </tbody>
-                    
-        </table>
-
-        <table class="table">
-
-                        <thead>
-                            <tr>
-                                <th class="table-heading" width="60%">Colouring</th>
-                              
-                            </tr>
-                        </thead>
+<body>
+<a name=top></a>
+<div class="navbar navbar-default navbar-inverse navbar-static-top" role=navigation>
+<div class=container>
+<div class=navbar-header>
+</div>
+<img class=brand style="max-height:300px; max-width:100%;margin: 0 auto; display:block;" src="img/DiamondLogo.png"/>
+<a href="#"><img class="inside-image shop-link" src="img/shop.png"/></a>
+<div class="navbar-collapse collapse pull-right">
+<ul class="nav navbar-nav">
+</ul>
+</div>
+</div>
+</div>
+<div id=mainCarousel class="carousel slide">
+<ol class=carousel-indicators>
+<li data-target="#mainCarousel" data-slide-to=0 class=active></li>
+<li data-target="#mainCarousel" data-slide-to=1></li>
+<li data-target="#mainCarousel" data-slide-to=2></li>
+<li data-target="#mainCarousel" data-slide-to=3></li>
+<li data-target="#mainCarousel" data-slide-to=4></li>
+<li data-target="#mainCarousel" data-slide-to=5></li>
+<li data-target="#mainCarousel" data-slide-to=6></li>
+</ol>
+<div class=carousel-inner>
+<div class="item active">
+<img src="img/slide7.jpg" alt=Hairdressing>
+</div>
+<div class=item>
+<img src="img/slide2.jpg" alt="Styling Cut and Blow Dry">
+</div>
+<div class=item>
+<img src="img/slide3.jpg" alt="Located in Gloucester">
+</div>
+<div class=item>
+<img src="img/slide4.jpg" alt="Lots of products in our Hair Care range">
+</div>
+<div class=item>
+<img src="img/slide5.jpg" alt="Womens Styling">
+</div>
+<div class=item>
+<img src="img/slide6.jpg" alt="Luxury Care">
+</div>
+<div class=item>
+<img src="img/slide1.jpg" alt="Men's Cut">
+</div>
+</div>
+<a class="carousel-control left" href="#mainCarousel" data-slide=prev><span class=icon-prev></span></a>
+<a class="carousel-control right" href="#mainCarousel" data-slide=next><span class=icon-next></span></a>
+</div>
+<div class="container marketing">
+<div class=row>
+<div class=col-lg-12>
+<h2 class="featurette-heading fancy"><span>Diamond Hair</span></h2>
+<p class=lead>Here at diamond we are passionate about hair. We cater for all the family with a 15% discount for children and O.A.P. We are a family run business that specialize in European, African, Asian, Caribbean and Caucasian hair. Our friendly team will make you leave shining like a diamond.</p>
+</div>
+</div>
+<div class="row featurette">
+<div class=col-md-12>
+<h2 class="featurette-heading fancy"><span>Our Service</span></h2>
+</div>
+</div>
+<div class=row>
+<div class=col-md-2></div>
+<div class=col-md-8>
+<table class=table>
+<thead>
+<tr>
+<th class=table-heading width="60%">Women</th>
+</tr>
+</thead>
 <tbody>
-
-                            <tr>
-                                <th>T-section (2 or more colours in foils)</th>
-                               
-                            </tr>
-                            <tr>
-                                <th>Full head high / Low light</th>
-                             
-                            </tr>
-                            <tr>
-                                <th>Foils and colour in-between</th>
-                         
-                            </tr>
-                            <tr>
-                                <th>Full head colour</th>
-                           
-                            </tr>
-                            <tr>
-                                <th>Creative colour</th>
-                              
-                            </tr>
-                            <tr>
-                                <th>Full head of colour application</th>
-                                
-                            </tr>
-                            <tr>
-                                <th>Re-growth</th>
-                             
-                            </tr>
-                        </tbody>
-                    
-        </table>
-        * All our colorings include a complimentary style. (Cut not including)
-      </div>
-      
-
-<div class="col-md-2"></div>
-      </div>
-
-
-      <!-- <hr class="featurette-divider"> -->
-
-      <div class="row featurette">
-        <h2 class="featurette-heading fancy"><span>Here we are</span></h2>
-        <div class="col-md-7">
-          
-        <address class="lead">
-          <span class="street-address"><img src="img/addresslogo.png" height="30px" />&nbsp;93A Barton Street,</span><br>
-          <span class="region"><img src="img/emptylogo.png" height="30px" />&nbsp;Gloucester</span><br>
-          <span class="postal-code"><img src="img/emptylogo.png" height="30px" />&nbsp;GL1 4HR</span><br>
-          <span class="country-name"><img src="img/emptylogo.png" height="30px" />&nbsp;Great Britain</span><br>
-          <span class="tel address"><img src="img/phonelogo.png" height="30px" />&nbsp;01452 301 172</span><br>
-          <span class="mob address"><img src="img/mobilelogo.png" height="30px" />&nbsp;07960 453 385</span><br>
-          <span class="email address"><img src="img/emaillogo.png" height="30px" />&nbsp;<a href="mailto:info@diamondhairsallon.co.uk?Subject=Hair%20Enquiry" target="_top">info@diamondhairsallon.co.uk</a></span>
-        </address>
-        </div>
-        <div class="col-md-5" style="height: 225px; ">
-          <div id="map-canvasLDN"></div>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#top">Back to top</a></p>
-        <p>© Copyright 2014 Diamond Hair Salon. Site Design by <a href="www.frog4u.co.uk">www.frog4u.co.uk</a></p>
-      </footer>
-
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/holder.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $(".navbar-nav a").popover({
-          placement : 'bottom'
-      });
-    });
-    
-    $('.carousel').carousel({
-        interval: 2500
-    }) 
-    
-    $('.shop-link').click(function(){
-        event.preventDefault();
-        alert("Our shop isn't quite ready yet - check back soon for an update");
-    });
-    </script>
-  
-
+<tr>
+<th>Dry cut (short hair)</th>
+</tr>
+<tr>
+<th>Dry cut (Long hair)</th>
+</tr>
+<tr>
+<th>Wash &amp; cut (scalp massage)</th>
+</tr>
+<tr>
+<th>Cut, wash and blow-dry</th>
+</tr>
+<tr>
+<th>Restyle cut/blow-dry</th>
+</tr>
+<tr>
+<th>Blow-dry &amp; wash</th>
+</tr>
+<tr>
+<th>Straightening</th>
+</tr>
+<tr>
+<th>Shampoo &amp; Set</th>
+</tr>
+<tr>
+<th>Wash &amp; Condition</th>
+</tr>
+<tr>
+<th>Fringe trim</th>
+</tr>
+</tbody>
+</table>
+<table class=table>
+<thead>
+<tr>
+<th class=table-heading width="60%">Men</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Gents cut</th>
+</tr>
+<tr>
+<th>Gents wash and cut</th>
+</tr>
+<tr>
+<th>Gents highlights</th>
+</tr>
+<tr>
+<th>Childs hair cut</th>
+</tr>
+</tbody>
+</table>
+<table class=table>
+<thead>
+<tr>
+<th class=table-heading width="60%">Colouring</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>T-section (2 or more colours in foils)</th>
+</tr>
+<tr>
+<th>Full head high / Low light</th>
+</tr>
+<tr>
+<th>Foils and colour in-between</th>
+</tr>
+<tr>
+<th>Full head colour</th>
+</tr>
+<tr>
+<th>Creative colour</th>
+</tr>
+<tr>
+<th>Full head of colour application</th>
+</tr>
+<tr>
+<th>Re-growth</th>
+</tr>
+</tbody>
+</table>
+* All our colorings include a complimentary style. (Cut not including)
+</div>
+<div class=col-md-2></div>
+</div>
+<div class="row featurette">
+<h2 class="featurette-heading fancy"><span>Here we are</span></h2>
+<div class=col-md-7>
+<address class=lead>
+<span class=street-address><img src="img/addresslogo.png" height=30px />&nbsp;93A Barton Street,</span><br>
+<span class=region><img src="img/emptylogo.png" height=30px />&nbsp;Gloucester</span><br>
+<span class=postal-code><img src="img/emptylogo.png" height=30px />&nbsp;GL1 4HR</span><br>
+<span class=country-name><img src="img/emptylogo.png" height=30px />&nbsp;Great Britain</span><br>
+<span class="tel address"><img src="img/phonelogo.png" height=30px />&nbsp;01452 301 172</span><br>
+<span class="mob address"><img src="img/mobilelogo.png" height=30px />&nbsp;07960 453 385</span><br>
+<span class="email address"><img src="img/emaillogo.png" height=30px />&nbsp;<a href="mailto:info@diamondhairsallon.co.uk?Subject=Hair%20Enquiry" target=_top>info@diamondhairsallon.co.uk</a></span>
+</address>
+</div>
+<div class=col-md-5 style="height: 225px; ">
+<div id=map-canvasLDN></div>
+</div>
+</div>
+<hr class=featurette-divider>
+<footer>
+<p class=pull-right><a href="#top">Back to top</a></p>
+<p>© Copyright 2014 Diamond Hair Salon. Site Design by <a href=www.frog4u.co.uk>www.frog4u.co.uk</a></p>
+</footer>
+</div>
+<script src="js/jquery-1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/holder.js"></script>
+<script>$(document).ready(function(){$(".navbar-nav a").popover({placement:'bottom'});});$('.carousel').carousel({interval:2500})
+$('.shop-link').click(function(){event.preventDefault();alert("Our shop isn't quite ready yet - check back soon for an update");});</script>
 </body></html>
