@@ -48,11 +48,12 @@ google.maps.event.addDomListener(window,'load',initialize);</script>
 </head>
 <body>
 <a name=top></a>
+<span itemscope itemtype="http://schema.org/LocalBusiness">
 <div class="navbar navbar-default navbar-inverse navbar-static-top" role=navigation>
 <div class=container>
 <div class=navbar-header>
 </div>
-<img class=brand style="max-height:300px; max-width:100%;margin: 0 auto; display:block;" src="img/DiamondLogo.png"/>
+<img  itemprop="image" class=brand style="max-height:300px; max-width:100%;margin: 0 auto; display:block;" src="img/DiamondLogo.png"/>
 <a href="#"><img class="inside-image shop-link" src="img/shop.png"/></a>
 <div class="navbar-collapse collapse pull-right">
 <ul class="nav navbar-nav">
@@ -99,7 +100,7 @@ google.maps.event.addDomListener(window,'load',initialize);</script>
 <div class="container marketing">
 <div class=row>
 <div class=col-lg-12>
-<h2 class="featurette-heading fancy"><span>Diamond Hair</span></h2>
+<h2 class="featurette-heading fancy"><span itemprop="name">Diamond Hair</span></h2>
 <div style="display:block; margin:auto; max-width: 64px;"><a href="https://plus.google.com/105893855256388805935" rel="publisher" target="_blank"><img src="img/googleplus.png" height=30px /></a><a href="https://www.facebook.com/pages/Diamond-Hair-Salon/1442244692674257" target="_blank"><img src="img/facebook.png" height=30px/></a></div>
 <p></p>
 <p class=lead>Here at diamond we are passionate about hair. We cater for all the family with a 15% discount for children and O.A.P. We are a family run business that specialize in European, African, Asian, Caribbean and Caucasian hair. Our friendly team will make you leave shining like a diamond.</p>
@@ -213,13 +214,15 @@ google.maps.event.addDomListener(window,'load',initialize);</script>
 <address class=lead>
 <span class="opening-hours"><img src="img/clocklogo.png" height=30px />&nbsp;Tue to Thu: 9:30am to 6pm</span><br>
 <span class="opening-hours"><img src="img/emptylogo.png" height=30px />&nbsp;Fri to Sat: 9.30am to 7pm</span><br>
-<span class="tel address"><img src="img/phonelogo.png" height=30px />&nbsp;01452 301 172</span><br>
-<span class="mob address"><img src="img/mobilelogo.png" height=30px />&nbsp;07960 453 385</span><br>
-<span class="email address"><img src="img/emaillogo.png" height=30px />&nbsp;<a href="mailto:info@diamondhairsalon.co.uk?Subject=Hair%20Enquiry" target=_top>info@diamondhairsalon.co.uk</a></span><br>
-<span class="street-address"><img src="img/addresslogo.png" height=30px />&nbsp;93A Barton Street</span><br>
-<span class="city"><img src="img/emptylogo.png" height="30px" />&nbsp;Gloucester</span><br>
-<span class="region"><img src="img/emptylogo.png" height="30px" />&nbsp;Gloucestershire</span><br>
-<span class=postal-code><img src="img/emptylogo.png" height=30px />&nbsp;GL1 4HR</span><br>
+<span itemprop="telephone" class="tel address"><img src="img/phonelogo.png" height=30px />&nbsp;01452 301 172</span><br>
+<span itemprop="telephone" class="mob address"><img src="img/mobilelogo.png" height=30px />&nbsp;07960 453 385</span><br>
+<span class="email address"><img src="img/emaillogo.png" height=30px />&nbsp;<a href="mailto:info@diamondhairsalon.co.uk?Subject=Hair%20Enquiry" target=_top><meta itemprop="email" content="info@diamondhairsalon.co.uk">info@diamondhairsalon.co.uk</a></span><br>
+    
+<span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="streetAddress" class="street-address"><img src="img/addresslogo.png" height=30px />&nbsp;93A Barton Street</span><br>
+<span itemprop="addressLocality" class="city"><img src="img/emptylogo.png" height="30px" />&nbsp;Gloucester</span><br>
+<span itemprop="addressRegion" class="region"><img src="img/emptylogo.png" height="30px" />&nbsp;Gloucestershire</span><br>
+<span itemprop="postalCode" class="postal-code"><img src="img/emptylogo.png" height=30px />&nbsp;GL1 4HR</span></span><br>
 </address>
 </div>
 <div class=col-md-5 style="height: 225px; ">
@@ -232,6 +235,7 @@ google.maps.event.addDomListener(window,'load',initialize);</script>
 <p>© Copyright 2014 Diamond Hair Salon. Site Design by <a href=www.frog4u.co.uk>www.frog4u.co.uk</a></p>
 </footer>
 </div>
+    </span>
 <script src="js/jquery-1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/holder.js"></script>
